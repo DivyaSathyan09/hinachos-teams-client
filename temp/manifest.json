@@ -1,0 +1,85 @@
+{
+  "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.15/MicrosoftTeams.schema.json",
+  "manifestVersion": "1.15",
+  "id": "5d61ae50-c1b8-11ee-95b4-2bc1c36bb05e",
+  "version": "0.0.1",
+  "packageName": "hinachosteamsclient",
+  "developer": {
+    "name": "elixrLabs",
+    "websiteUrl": "https://ab33-103-156-208-254.ngrok-free.app",
+    "privacyUrl": "https://ab33-103-156-208-254.ngrok-free.app/privacy.html",
+    "termsOfUseUrl": "https://ab33-103-156-208-254.ngrok-free.app/tou.html"
+  },
+  "name": {
+    "short": "hinachos-teams-client",
+    "full": "hinachos-teams-client"
+  },
+  "description": {
+    "short": "TODO: add short description here",
+    "full": "TODO: add full description here"
+  },
+  "icons": {
+    "outline": "icon-outline.png",
+    "color": "icon-color.png"
+  },
+  "accentColor": "#D85028",
+  "configurableTabs": [],
+  "staticTabs": [
+    {
+      "entityId": "46a1fa6f-7c5c-40b4-b62f-7369de877624",
+      "name": "Dashboard",
+      "contentUrl": "https://ab33-103-156-208-254.ngrok-free.app/dashboardTab/?name={loginHint}&tenant={tid}&theme={theme}",
+      "scopes": [
+        "personal"
+      ]
+    }
+  ],
+  "bots": [
+    {
+      "botId": "42f6d7f1-5ab6-4b5c-bb03-517750c1838b",
+      "needsChannelSelector": true,
+      "isNotificationOnly": false,
+      "scopes": [
+        "team",
+        "personal",
+        "groupchat"
+      ],
+      "commandLists": [
+        {
+          "scopes": [
+            "team",
+            "personal"
+          ],
+          "commands": [
+            {
+              "title": "Help",
+              "description": "Shows help information"
+            },
+            {
+              "title": "Who am I?",
+              "description": "Shows information about your Teams user"
+            },
+            {
+              "title": "Mention me",
+              "description": "Let the bot @mention you"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "connectors": [],
+  "composeExtensions": [],
+  "permissions": [
+    "identity",
+    "messageTeamMembers"
+  ],
+  "validDomains": [
+    "ab33-103-156-208-254.ngrok-free.app"
+  ],
+  "showLoadingIndicator": false,
+  "webApplicationInfo": {
+    "id": "00000000-0000-0000-0000-000000000000",
+    "resource": "api://hinachosteamsclient.azurewebsites.net/00000000-0000-0000-0000-000000000000"
+  }
+}

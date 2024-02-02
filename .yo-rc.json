@@ -1,0 +1,9 @@
+{
+  "generator-teams": {
+    "promptValues": {
+      "developer": "elixrLabs"
+    },
+    "libraryName": "hinachosTeamsClient",
+    "generator-version": "4.1.0"
+  }
+}
